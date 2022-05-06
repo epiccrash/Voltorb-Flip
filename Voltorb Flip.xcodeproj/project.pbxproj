@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71029F4228258203002788DC /* Voltorb_FlipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F4128258203002788DC /* Voltorb_FlipApp.swift */; };
+		71029F4428258203002788DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F4328258203002788DC /* ContentView.swift */; };
+		71029F4628258208002788DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71029F4528258208002788DC /* Assets.xcassets */; };
+		71029F4928258208002788DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71029F4828258208002788DC /* Preview Assets.xcassets */; };
+		71029F4B28258208002788DC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F4A28258208002788DC /* Persistence.swift */; };
+		71029F4E28258208002788DC /* Voltorb_Flip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71029F4C28258208002788DC /* Voltorb_Flip.xcdatamodeld */; };
+		71029F5928258208002788DC /* Voltorb_FlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F5828258208002788DC /* Voltorb_FlipTests.swift */; };
+		71029F6428258208002788DC /* Voltorb_FlipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F6328258208002788DC /* Voltorb_FlipUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71029F5528258208002788DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71029F3628258203002788DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71029F3D28258203002788DC;
+			remoteInfo = "Voltorb Flip";
+		};
+		71029F6028258208002788DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71029F3628258203002788DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71029F3D28258203002788DC;
+			remoteInfo = "Voltorb Flip";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71029F3E28258203002788DC /* Voltorb Flip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voltorb Flip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71029F4128258203002788DC /* Voltorb_FlipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltorb_FlipApp.swift; sourceTree = "<group>"; };
+		71029F4328258203002788DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71029F4528258208002788DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71029F4828258208002788DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71029F4A28258208002788DC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		71029F4D28258208002788DC /* Voltorb_Flip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Voltorb_Flip.xcdatamodel; sourceTree = "<group>"; };
+		71029F4F28258208002788DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71029F5428258208002788DC /* Voltorb FlipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voltorb FlipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71029F5828258208002788DC /* Voltorb_FlipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltorb_FlipTests.swift; sourceTree = "<group>"; };
+		71029F5A28258208002788DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71029F5F28258208002788DC /* Voltorb FlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voltorb FlipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71029F6328258208002788DC /* Voltorb_FlipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltorb_FlipUITests.swift; sourceTree = "<group>"; };
+		71029F6528258208002788DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71029F3B28258203002788DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71029F5128258208002788DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71029F5C28258208002788DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71029F3528258203002788DC = {
+			isa = PBXGroup;
+			children = (
+				71029F4028258203002788DC /* Voltorb Flip */,
+				71029F5728258208002788DC /* Voltorb FlipTests */,
+				71029F6228258208002788DC /* Voltorb FlipUITests */,
+				71029F3F28258203002788DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71029F3F28258203002788DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71029F3E28258203002788DC /* Voltorb Flip.app */,
+				71029F5428258208002788DC /* Voltorb FlipTests.xctest */,
+				71029F5F28258208002788DC /* Voltorb FlipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71029F4028258203002788DC /* Voltorb Flip */ = {
+			isa = PBXGroup;
+			children = (
+				71029F4128258203002788DC /* Voltorb_FlipApp.swift */,
+				71029F4328258203002788DC /* ContentView.swift */,
+				71029F4528258208002788DC /* Assets.xcassets */,
+				71029F4A28258208002788DC /* Persistence.swift */,
+				71029F4F28258208002788DC /* Info.plist */,
+				71029F4C28258208002788DC /* Voltorb_Flip.xcdatamodeld */,
+				71029F4728258208002788DC /* Preview Content */,
+			);
+			path = "Voltorb Flip";
+			sourceTree = "<group>";
+		};
+		71029F4728258208002788DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				71029F4828258208002788DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71029F5728258208002788DC /* Voltorb FlipTests */ = {
+			isa = PBXGroup;
+			children = (
+				71029F5828258208002788DC /* Voltorb_FlipTests.swift */,
+				71029F5A28258208002788DC /* Info.plist */,
+			);
+			path = "Voltorb FlipTests";
+			sourceTree = "<group>";
+		};
+		71029F6228258208002788DC /* Voltorb FlipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71029F6328258208002788DC /* Voltorb_FlipUITests.swift */,
+				71029F6528258208002788DC /* Info.plist */,
+			);
+			path = "Voltorb FlipUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71029F3D28258203002788DC /* Voltorb Flip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71029F6828258208002788DC /* Build configuration list for PBXNativeTarget "Voltorb Flip" */;
+			buildPhases = (
+				71029F3A28258203002788DC /* Sources */,
+				71029F3B28258203002788DC /* Frameworks */,
+				71029F3C28258203002788DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Voltorb Flip";
+			productName = "Voltorb Flip";
+			productReference = 71029F3E28258203002788DC /* Voltorb Flip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71029F5328258208002788DC /* Voltorb FlipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71029F6B28258208002788DC /* Build configuration list for PBXNativeTarget "Voltorb FlipTests" */;
+			buildPhases = (
+				71029F5028258208002788DC /* Sources */,
+				71029F5128258208002788DC /* Frameworks */,
+				71029F5228258208002788DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71029F5628258208002788DC /* PBXTargetDependency */,
+			);
+			name = "Voltorb FlipTests";
+			productName = "Voltorb FlipTests";
+			productReference = 71029F5428258208002788DC /* Voltorb FlipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71029F5E28258208002788DC /* Voltorb FlipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71029F6E28258208002788DC /* Build configuration list for PBXNativeTarget "Voltorb FlipUITests" */;
+			buildPhases = (
+				71029F5B28258208002788DC /* Sources */,
+				71029F5C28258208002788DC /* Frameworks */,
+				71029F5D28258208002788DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71029F6128258208002788DC /* PBXTargetDependency */,
+			);
+			name = "Voltorb FlipUITests";
+			productName = "Voltorb FlipUITests";
+			productReference = 71029F5F28258208002788DC /* Voltorb FlipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71029F3628258203002788DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					71029F3D28258203002788DC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					71029F5328258208002788DC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 71029F3D28258203002788DC;
+					};
+					71029F5E28258208002788DC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 71029F3D28258203002788DC;
+					};
+				};
+			};
+			buildConfigurationList = 71029F3928258203002788DC /* Build configuration list for PBXProject "Voltorb Flip" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71029F3528258203002788DC;
+			productRefGroup = 71029F3F28258203002788DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71029F3D28258203002788DC /* Voltorb Flip */,
+				71029F5328258208002788DC /* Voltorb FlipTests */,
+				71029F5E28258208002788DC /* Voltorb FlipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71029F3C28258203002788DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71029F4928258208002788DC /* Preview Assets.xcassets in Resources */,
+				71029F4628258208002788DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71029F5228258208002788DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71029F5D28258208002788DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71029F3A28258203002788DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71029F4B28258208002788DC /* Persistence.swift in Sources */,
+				71029F4428258203002788DC /* ContentView.swift in Sources */,
+				71029F4228258203002788DC /* Voltorb_FlipApp.swift in Sources */,
+				71029F4E28258208002788DC /* Voltorb_Flip.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71029F5028258208002788DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71029F5928258208002788DC /* Voltorb_FlipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71029F5B28258208002788DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71029F6428258208002788DC /* Voltorb_FlipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71029F5628258208002788DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71029F3D28258203002788DC /* Voltorb Flip */;
+			targetProxy = 71029F5528258208002788DC /* PBXContainerItemProxy */;
+		};
+		71029F6128258208002788DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71029F3D28258203002788DC /* Voltorb Flip */;
+			targetProxy = 71029F6028258208002788DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		71029F6628258208002788DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71029F6728258208002788DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71029F6928258208002788DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Voltorb Flip/Preview Content\"";
+				DEVELOPMENT_TEAM = AA3TZY2CKB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Voltorb Flip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jperrino.Voltorb-Flip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71029F6A28258208002788DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Voltorb Flip/Preview Content\"";
+				DEVELOPMENT_TEAM = AA3TZY2CKB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Voltorb Flip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jperrino.Voltorb-Flip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71029F6C28258208002788DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AA3TZY2CKB;
+				INFOPLIST_FILE = "Voltorb FlipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jperrino.Voltorb-FlipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltorb Flip.app/Voltorb Flip";
+			};
+			name = Debug;
+		};
+		71029F6D28258208002788DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AA3TZY2CKB;
+				INFOPLIST_FILE = "Voltorb FlipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jperrino.Voltorb-FlipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltorb Flip.app/Voltorb Flip";
+			};
+			name = Release;
+		};
+		71029F6F28258208002788DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AA3TZY2CKB;
+				INFOPLIST_FILE = "Voltorb FlipUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jperrino.Voltorb-FlipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voltorb Flip";
+			};
+			name = Debug;
+		};
+		71029F7028258208002788DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AA3TZY2CKB;
+				INFOPLIST_FILE = "Voltorb FlipUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jperrino.Voltorb-FlipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voltorb Flip";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71029F3928258203002788DC /* Build configuration list for PBXProject "Voltorb Flip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71029F6628258208002788DC /* Debug */,
+				71029F6728258208002788DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71029F6828258208002788DC /* Build configuration list for PBXNativeTarget "Voltorb Flip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71029F6928258208002788DC /* Debug */,
+				71029F6A28258208002788DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71029F6B28258208002788DC /* Build configuration list for PBXNativeTarget "Voltorb FlipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71029F6C28258208002788DC /* Debug */,
+				71029F6D28258208002788DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71029F6E28258208002788DC /* Build configuration list for PBXNativeTarget "Voltorb FlipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71029F6F28258208002788DC /* Debug */,
+				71029F7028258208002788DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		71029F4C28258208002788DC /* Voltorb_Flip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				71029F4D28258208002788DC /* Voltorb_Flip.xcdatamodel */,
+			);
+			currentVersion = 71029F4D28258208002788DC /* Voltorb_Flip.xcdatamodel */;
+			path = Voltorb_Flip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 71029F3628258203002788DC /* Project object */;
+}
