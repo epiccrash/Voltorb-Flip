@@ -15,6 +15,16 @@
 		71029F4E28258208002788DC /* Voltorb_Flip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71029F4C28258208002788DC /* Voltorb_Flip.xcdatamodeld */; };
 		71029F5928258208002788DC /* Voltorb_FlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F5828258208002788DC /* Voltorb_FlipTests.swift */; };
 		71029F6428258208002788DC /* Voltorb_FlipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F6328258208002788DC /* Voltorb_FlipUITests.swift */; };
+		71029F87282583B7002788DC /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F86282583B7002788DC /* GameView.swift */; };
+		71029F8F28258513002788DC /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F8E28258513002788DC /* GridView.swift */; };
+		71029FA0282616FE002788DC /* InfoSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029F9F282616FE002788DC /* InfoSquare.swift */; };
+		71029FA828261754002788DC /* BasicSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029FA728261754002788DC /* BasicSquare.swift */; };
+		71029FAD28263BA1002788DC /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71029FAC28263BA1002788DC /* GameModel.swift */; };
+		7149E6A62836AC0A00D6AAA6 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149E6A52836AC0A00D6AAA6 /* BackView.swift */; };
+		7149E6AE2836AC3900D6AAA6 /* FrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149E6AD2836AC3900D6AAA6 /* FrontView.swift */; };
+		7149E6B92836D9C500D6AAA6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149E6B82836D9C500D6AAA6 /* Constants.swift */; };
+		71A7855B282B4E2A00A6DB48 /* GridSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7855A282B4E2A00A6DB48 /* GridSquare.swift */; };
+		71F7A0EC282CA89F0021BCD7 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7A0EB282CA89F0021BCD7 /* LineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		71029F5F28258208002788DC /* Voltorb FlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voltorb FlipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71029F6328258208002788DC /* Voltorb_FlipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltorb_FlipUITests.swift; sourceTree = "<group>"; };
 		71029F6528258208002788DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71029F86282583B7002788DC /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		71029F8E28258513002788DC /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		71029F9F282616FE002788DC /* InfoSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSquare.swift; sourceTree = "<group>"; };
+		71029FA728261754002788DC /* BasicSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSquare.swift; sourceTree = "<group>"; };
+		71029FAC28263BA1002788DC /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		7149E6A52836AC0A00D6AAA6 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		7149E6AD2836AC3900D6AAA6 /* FrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontView.swift; sourceTree = "<group>"; };
+		7149E6B82836D9C500D6AAA6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		71A7855A282B4E2A00A6DB48 /* GridSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSquare.swift; sourceTree = "<group>"; };
+		71F7A0EB282CA89F0021BCD7 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,8 @@
 		71029F4028258203002788DC /* Voltorb Flip */ = {
 			isa = PBXGroup;
 			children = (
+				71029F7828258263002788DC /* Views */,
+				71029F772825825B002788DC /* Models */,
 				71029F4128258203002788DC /* Voltorb_FlipApp.swift */,
 				71029F4328258203002788DC /* ContentView.swift */,
 				71029F4528258208002788DC /* Assets.xcassets */,
@@ -134,6 +156,54 @@
 				71029F6528258208002788DC /* Info.plist */,
 			);
 			path = "Voltorb FlipUITests";
+			sourceTree = "<group>";
+		};
+		71029F772825825B002788DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71029FAC28263BA1002788DC /* GameModel.swift */,
+				7149E6B82836D9C500D6AAA6 /* Constants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71029F7828258263002788DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71F7A0EA282CA8850021BCD7 /* Lines */,
+				71029F9328260343002788DC /* Cells */,
+				71029F86282583B7002788DC /* GameView.swift */,
+				71029F8E28258513002788DC /* GridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71029F9328260343002788DC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7149E6A42836ABE900D6AAA6 /* BasicSquareSides */,
+				71029F9F282616FE002788DC /* InfoSquare.swift */,
+				71029FA728261754002788DC /* BasicSquare.swift */,
+				71A7855A282B4E2A00A6DB48 /* GridSquare.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7149E6A42836ABE900D6AAA6 /* BasicSquareSides */ = {
+			isa = PBXGroup;
+			children = (
+				7149E6A52836AC0A00D6AAA6 /* BackView.swift */,
+				7149E6AD2836AC3900D6AAA6 /* FrontView.swift */,
+			);
+			path = BasicSquareSides;
+			sourceTree = "<group>";
+		};
+		71F7A0EA282CA8850021BCD7 /* Lines */ = {
+			isa = PBXGroup;
+			children = (
+				71F7A0EB282CA89F0021BCD7 /* LineView.swift */,
+			);
+			path = Lines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +335,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71029FA0282616FE002788DC /* InfoSquare.swift in Sources */,
+				7149E6AE2836AC3900D6AAA6 /* FrontView.swift in Sources */,
 				71029F4B28258208002788DC /* Persistence.swift in Sources */,
+				7149E6A62836AC0A00D6AAA6 /* BackView.swift in Sources */,
+				71029FAD28263BA1002788DC /* GameModel.swift in Sources */,
 				71029F4428258203002788DC /* ContentView.swift in Sources */,
 				71029F4228258203002788DC /* Voltorb_FlipApp.swift in Sources */,
+				71029F8F28258513002788DC /* GridView.swift in Sources */,
 				71029F4E28258208002788DC /* Voltorb_Flip.xcdatamodeld in Sources */,
+				71029F87282583B7002788DC /* GameView.swift in Sources */,
+				71F7A0EC282CA89F0021BCD7 /* LineView.swift in Sources */,
+				7149E6B92836D9C500D6AAA6 /* Constants.swift in Sources */,
+				71029FA828261754002788DC /* BasicSquare.swift in Sources */,
+				71A7855B282B4E2A00A6DB48 /* GridSquare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
