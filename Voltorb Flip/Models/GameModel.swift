@@ -35,6 +35,8 @@ class GameModel: ObservableObject {
     @Published var totalPointsInLastRow: [Int] = []
     // Total bombs shown in the info squares of the last row
     @Published var totalBombsInLastRow: [Int] = []
+    // Total points and bombs
+    var totalPoints = 0
     
     // All possible level arrangements, formatted as:
     // [number of twos, number of threes, number of bombs] across the entire board
@@ -105,12 +107,15 @@ class GameModel: ObservableObject {
         var arrangement: [Int] = levelArrangements[level - 1].randomElement()!
         // Index to track which cell of the board is filled in
         var index: Int = 0
+        // Reset total points
+        totalPoints = 1
         
         // Fill the front of the game board with as many twos as are specified in the board arrangement (index 0)
         while (arrangement[0] > 0) {
             board[index] = 2
             index += 1
             arrangement[0] -= 1
+            totalPoints *= 2
         }
         
         // Fill the next chunk of the game board with as many threes as are specified in the board arrangement (index 1)
@@ -118,6 +123,7 @@ class GameModel: ObservableObject {
             board[index] = 3
             index += 1
             arrangement[1] -= 1
+            totalPoints *= 3
         }
         
         // Fill the next chunk of the game board with as many bombs (zeroes) as are specified in the board arrangement (index 2)
@@ -148,7 +154,7 @@ class GameModel: ObservableObject {
         }
         
         // Update the game state to be the main turn
-        gameState = GameState.turn
+        advanceState()
     }
     
     /// Gets the total points across a row or column to be shown in the relevant info square.
@@ -193,8 +199,8 @@ class GameModel: ObservableObject {
     func changeScore(num: Int) {
         // If the number is 0, reset the game to erase the current score
         if (num == 0) {
-            gameState = GameState.turnEnd
-            resetGame()
+            advanceState()
+            // resetGame()
         }
         // If the current score is 0, but the number provided is greater than 1, add that number to the current score
         else if (currentScore == 0) {
@@ -203,6 +209,11 @@ class GameModel: ObservableObject {
         // If the current score is greater than 0, multiply the current score by the number provided
         else {
             currentScore *= num
+        }
+        
+        // If the number of points the player has gotten equals the number of points possible, advance to the end of the turn
+        if (totalPoints == currentScore) {
+            advanceState()
         }
     }
     
@@ -217,7 +228,6 @@ class GameModel: ObservableObject {
         // Reset the game state
         // gameState = GameState.turnStart
         
-        // TODO: Probably animate squares turning over here, then call InitGameBoard
         // Recreate the game board
         InitGameBoard()
         // Update the round's score to be 0
@@ -240,6 +250,24 @@ class GameModel: ObservableObject {
         level = max(1, level - 1)
         // Reset the game
         resetGame()
+    }
+    
+    /// Advances the game's state to the next state. The order is turnStart -> turn -> turnEnd -> repeat.
+    func advanceState() {
+        switch (gameState) {
+        // If the game is at the start, move to the game's main turn
+        case .turnStart:
+            gameState = .turn
+            break
+        // If in the main turn, go to the end of the turn
+        case .turn:
+            gameState = .turnEnd
+            break
+        // If at the end of the turn, start a new turn
+        case .turnEnd:
+            gameState = .turnStart
+            break
+        }
     }
 }
 

@@ -44,7 +44,13 @@ struct BasicSquare: View {
                     flip()
                     gameModel.changeScore(num: gameModel.gameBoard[row][col])
                 }
-            }
+            }.onReceive(gameModel.$gameState, perform: { state in
+                if (state == GameState.turnEnd) {
+                    if (!isFlipped) {
+                        flip()
+                    }
+                }
+            })
         }
     }
     

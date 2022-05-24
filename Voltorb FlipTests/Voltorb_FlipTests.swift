@@ -58,6 +58,37 @@ class Voltorb_FlipTests: XCTestCase {
         XCTAssertEqual(gameModel.currentScore, 0)
     }
     
+    // Make sure the total points are equal to the multiplied total possible number of points after we start the game
+    func testGameModelTotalPointsAreEqualToMultipliedTotal() throws {
+        // Move through each row and column and multiply to get the total number of possible points
+        var multTotal = 1
+        for i in 0..<gameModel.gameBoard.endIndex {
+            for j in 0..<gameModel.gameBoard[i].endIndex {
+                let num = gameModel.gameBoard[i][j]
+                if (num > 0) {
+                    multTotal *= num
+                }
+            }
+        }
+        // Assert the multiplied total above is the number of possible points represented by totalPoints
+        XCTAssertEqual(multTotal, gameModel.totalPoints)
+    }
+    
+    // Make sure advancing the state of the game follows a set pattern
+    func testAdvanceStateCycle() {
+        // Game should currently be on the turn phase since we initialized the game board
+        XCTAssertEqual(gameModel.gameState, GameState.turn)
+        // Advancing the game's state should reach the end of the turn
+        gameModel.advanceState()
+        XCTAssertEqual(gameModel.gameState, GameState.turnEnd)
+        // After the game's end we should be back at the start of the game
+        gameModel.advanceState()
+        XCTAssertEqual(gameModel.gameState, GameState.turnStart)
+        // Advancing the state again should result in going back to the main turn
+        gameModel.advanceState()
+        XCTAssertEqual(gameModel.gameState, GameState.turn)
+    }
+    
     // Make sure the game's current score increases via addition if it is 0 and we flip a 1
     func testGameModelChangeScoreWhen0With1Adds1() throws {
         // Change the current score by 1, so it equals 1 via addition
@@ -95,6 +126,13 @@ class Voltorb_FlipTests: XCTestCase {
         gameModel.changeScore(num: 3)
         XCTAssertEqual(gameModel.currentScore, 6)
         XCTAssertEqual(gameModel.totalScore, 0)
+    }
+    
+    // Make sure that reaching the number of total points possible in the game advances the state
+    func testGameModelChangeScoreToTotalPointsAdvancesState() throws {
+        // Making the score equal to the number of total possible points should push the game to the end of the turn
+        gameModel.changeScore(num: gameModel.totalPoints)
+        XCTAssertEqual(gameModel.gameState, GameState.turnEnd)
     }
     
     // Make sure we can add the current score to the total score to increase it
